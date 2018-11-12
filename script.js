@@ -4,21 +4,26 @@ window.onload = function() {
       .then((response) => response.json())
       .then((responseData) => {
         let template =
-        `<table>
-         <th class="">Vagas Trampos</th>
+        `<table class="table_oportunity">
+         <th class="table_th_oportunity table_th_oportunity--header">Vagas Trampos.co</th>
         `;
         const resposta = responseData;
         resposta.map(function(resposta) {
-        template +=`<tr><td class="">${resposta.opportunity.name}</td></tr>`;
+        template +=
+        `
+       <tr>
+          <td class="table_td_oportunity">
+            <a href="${resposta.opportunity.permalink}">
+              <div class="opportunity__name">${resposta.opportunity.name}</div>
+              <div class="company__name">${resposta.opportunity.company_name}</div>
+            </a>
+          </td>
+        </tr>`;
 
 
-
-
-
-          console.log(resposta.opportunity.name);
         });
         template +=
-       `<th class="">Vagas Trampos</th>
+       `<th class="table_th_oportunity table_th_oportunity--footer">Trampos.co</th>
        </table>
        `;
         const widget = document.querySelector("#widget");
