@@ -4,17 +4,18 @@ window.onload = function() {
       .then((response) => response.json())
       .then((responseData) => {
         let template =
-        `<table class="table_oportunity">
+        `<table cellspacing="0" cellpadding="0" class="table_oportunity">
          <th class="table_th_oportunity table_th_oportunity--header">Vagas Trampos.co</th>
+         <tbody class="table_oportunity_body">
         `;
         const resposta = responseData;
         resposta.map(function(resposta) {
         template +=
         `
-       <tr>
-          <td class="table_td_oportunity">
+       <tr class="table_tr_oportunity">
+          <td class="table_td_oportunity table_td_oportunity--border-${Math.floor(Math.random() * 4) + 1  }">
             <a href="${resposta.opportunity.permalink}">
-              <div class="opportunity__name">${resposta.opportunity.name}</div>
+              <div class="opportunity__name">${resposta.opportunity.name.toUpperCase()}</div>
               <div class="company__name">${resposta.opportunity.company_name}</div>
             </a>
           </td>
@@ -23,7 +24,8 @@ window.onload = function() {
 
         });
         template +=
-       `<th class="table_th_oportunity table_th_oportunity--footer">Trampos.co</th>
+       `</tbody>
+       <th class="table_th_oportunity table_th_oportunity--footer">Trampos.co</th>
        </table>
        `;
         const widget = document.querySelector("#widget");

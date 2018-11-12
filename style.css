@@ -2,15 +2,77 @@
 }
 .table_oportunity{
 }
+.table_oportunity_body{
+   display: block;
+   height: 200px;
+   overflow: auto;
+}
 .table_th_oportunity{
   background-color: #241f1c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: aliceblue;
+}
+.table_th_oportunity--header{
+  font-size: 20px;
+}
+.table_th_oportunity--footer{
+}
+.table_tr_oportunity{
+
 }
 .table_td_oportunity{
-
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 6px solid #e95e73;
+  background-color: #38332f;
+}
+.table_td_oportunity--border-1{
+  border-left: 6px solid #e95e73;
+}
+.table_td_oportunity--border-2{
+  border-left: 6px solid #52c2c6;
+}
+.table_td_oportunity--border-3{
+  border-left: 6px solid #dec125;
+}
+.table_td_oportunity--border-4{
+  border-left: 6px solid #1f6782;
+}
+.table_td_oportunity--border-5{
+  border-left: 6px solid #ff960c;
+}
+.table_td_oportunity a{
+ text-decoration: none;
+}
+.table_td_oportunity a:link {
+    color: white;
+}
+.table_td_oportunity a:visited {
+    color: gray;
 }
 .opportunity__name{
-
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .company__name{
+  font-size: 10px;
+  margin-left: 10px;
+}
+/*Custom scroll bar(apenas chrome)*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
