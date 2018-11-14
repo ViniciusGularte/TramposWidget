@@ -24,15 +24,17 @@
   text-align: left;
   padding-left: 25px;
 }
-.table_tr_oportunity{
-
-}
 .table_td_oportunity{
+  border-bottom: 1px solid #55504d;
+
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
   border-left: 6px solid #e95e73;
   background-color: #38332f;
+}
+.table_td_oportunity:hover{
+  background-color: #514c47;
 }
 .table_td_oportunity--border-1{
   border-left: 6px solid #e95e73;
