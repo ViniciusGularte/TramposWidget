@@ -14,9 +14,15 @@
   color: aliceblue;
 }
 .table_th_oportunity--header{
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
 }
 .table_th_oportunity--footer{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+  padding-left: 25px;
 }
 .table_tr_oportunity{
 
